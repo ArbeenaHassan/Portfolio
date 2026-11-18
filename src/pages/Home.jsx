@@ -351,63 +351,63 @@ export default function Home() {
           </motion.p>
 
           <motion.div 
-            className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 mt-6 w-full px-4"
+            className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 mt-6 w-full max-w-4xl mx-auto px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
             {/* Skills Button */}
-            <motion.a
-              href="#skills"
-              whileHover={{ scale: 1.08, y: -4 }}
-              whileTap={{ scale: 0.95 }}
-              className="button-glow w-full sm:w-auto min-w-[170px] text-center inline-block relative font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl 
-                      text-white bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 gradient-shift
-                      shadow-lg hover:shadow-[0_10px_40px_-10px_rgba(59,130,246,0.7)]
-                      transition-all duration-300"
-            >
-              <span className="relative z-10">💡 Skills</span>
-            </motion.a>
+            <motion.div whileHover={{ scale: 1.06, y: -4 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-[190px]">
+              <a
+                href="#skills"
+                className="button-glow w-full h-[52px] flex items-center justify-center font-semibold text-sm sm:text-base rounded-xl 
+                        text-white bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 gradient-shift
+                        border-2 border-transparent shadow-lg hover:shadow-[0_10px_40px_-10px_rgba(59,130,246,0.7)]
+                        transition-all duration-300"
+              >
+                <span className="relative z-10">💡 Skills</span>
+              </a>
+            </motion.div>
 
             {/* Projects Button */}
-            <motion.div whileHover={{ scale: 1.08, y: -4 }} whileTap={{ scale: 0.95 }}>
+            <motion.div whileHover={{ scale: 1.06, y: -4 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-[190px]">
               <Link
                 to="/projects"
-                className="button-glow w-full sm:w-auto min-w-[170px] text-center inline-block relative font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl 
+                className="button-glow w-full h-[52px] flex items-center justify-center font-semibold text-sm sm:text-base rounded-xl 
                         text-blue-600 dark:text-cyan-400 
                         bg-white dark:bg-zinc-900 
                         border-2 border-blue-500 
                         hover:shadow-[0_0_30px_rgba(59,130,246,0.6),0_10px_40px_-10px_rgba(59,130,246,0.4)]
-                        transform transition-all duration-300"
+                        transition-all duration-300"
               >
                 <span className="relative z-10">🚀 View Projects</span>
               </Link>
             </motion.div>
 
             {/* Resume Button */}
-            <motion.a
-              href="/Arbeena (1).pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.08, y: -4 }}
-              whileTap={{ scale: 0.95 }}
-              className="button-glow w-full sm:w-auto min-w-[170px] text-center inline-block relative font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl 
-                      text-purple-600 dark:text-purple-300 
-                      bg-white dark:bg-zinc-900 
-                      border-2 border-purple-500 
-                      hover:shadow-[0_0_30px_rgba(168,85,247,0.6),0_10px_40px_-10px_rgba(168,85,247,0.4)]
-                      transform transition-all duration-300"
-            >
-              <span className="relative z-10">📄 View Resume</span>
-            </motion.a>
+            <motion.div whileHover={{ scale: 1.06, y: -4 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-[190px]">
+              <a
+                href="/Arbeena (1).pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-glow w-full h-[52px] flex items-center justify-center font-semibold text-sm sm:text-base rounded-xl 
+                        text-purple-600 dark:text-purple-300 
+                        bg-white dark:bg-zinc-900 
+                        border-2 border-purple-500 
+                        hover:shadow-[0_0_30px_rgba(168,85,247,0.6),0_10px_40px_-10px_rgba(168,85,247,0.4)]
+                        transition-all duration-300"
+              >
+                <span className="relative z-10">📄 View Resume</span>
+              </a>
+            </motion.div>
 
             {/* Let's Connect */}
-            <motion.div whileHover={{ scale: 1.08, y: -4 }} whileTap={{ scale: 0.95 }}>
+            <motion.div whileHover={{ scale: 1.06, y: -4 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-[190px]">
               <Link
                 to="/contact"
-                className="button-glow w-full sm:w-auto min-w-[170px] text-center inline-block relative font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl 
+                className="button-glow w-full h-[52px] flex items-center justify-center font-semibold text-sm sm:text-base rounded-xl 
                         text-white bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 gradient-shift
-                        shadow-lg hover:shadow-[0_10px_40px_-10px_rgba(59,130,246,0.7)]
+                        border-2 border-transparent shadow-lg hover:shadow-[0_10px_40px_-10px_rgba(59,130,246,0.7)]
                         transition-all duration-300"
               >
                 <span className="relative z-10">🤝 Let's Connect</span>
